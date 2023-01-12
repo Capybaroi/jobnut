@@ -1,0 +1,573 @@
+@font-face {
+    font-family: "Shrikhand";
+    src: url("/fonts/Shrikhand.ttf") format("woff2"),
+        url(Shrikhand.ttf) format("truetype");
+   }
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: 'Shrikhand', sans-serif;
+}
+.text p{
+    text-align: justify;
+    hyphens : auto;
+    font-family: ui-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* NAV BAR */
+
+.fullpage_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 9%;
+    z-index: 1000;
+    position: relative;
+    font-size: x-large;
+    background-color: rgb(255, 113, 31);
+}
+
+.fullpage_menu a img {
+    width: 140px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+}
+
+.menu li a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.menu li a:hover{
+    font-weight: bold;
+}
+
+
+#Newsletter a{
+    color: rgb(255, 113, 31);
+}
+
+#Newsletter a img{
+    width: 30px;;
+}
+
+#Newsletter a:hover{
+    font-weight: bold;
+}
+
+
+.menuburger{
+    display: none;
+    padding: 40px 0 0 0;
+    position: fixed;
+    right: 40px;
+    z-index: 1000;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: black;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(255, 113, 31);
+  }
+
+  .sidenav a:nth-last-child():hover {
+    color: white;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    right: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    border: solid 1px black;
+  }
+
+
+
+/* NAV BAR *//* FIN */
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+header{
+    height: 100vh;
+    background-color: #FADAA9;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: #ff7300;
+    margin: auto 7.5%;
+    font-size: 217pt;
+    line-height: 210pt;
+    z-index: 6;
+    position: relative;
+    opacity: 0;
+    text-align: center;
+}
+
+.hfirst h1{
+    animation: pulse 12s alternate infinite;
+}
+
+
+.hsecond h1{
+    animation: pulse 12s alternate infinite;
+    animation-delay: 0.5s;
+}
+
+.hthird h1{
+    animation: pulse 12s alternate infinite;
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 100;
+  }
+}
+.donutfire{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.donut1 {
+    animation-duration: 12s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 100%;
+    height: 33%;
+}
+.donut2 {
+    animation-duration: 12s;
+    animation-name: slideout;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 100%;
+    height: 33%;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: -100%;
+      width: 100%;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      margin-left: -100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 100%;
+      width: 100%;
+    }
+  }
+
+/* HEADER *//* FIN */
+
+/* MAIN */
+
+main{
+    background-color: #FADAA8;
+}
+
+/* MAIN *//* FIN */
+
+.bannierequiz{
+    display: flex;
+}
+.bannierequiz img{
+    width: 100%;
+
+}
+
+.flexdonut{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.text{
+    padding: 0 5%;
+}
+
+.boxdroite{
+    padding-right: 5%;
+}
+
+.img{
+background-color: #000000;
+border-radius: 20px;
+}
+
+h4{
+    font-size: 23px;
+}
+
+
+/* BOUTIQUE */
+.boutique{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+h3{
+    color: #623511;
+    padding: 50px 7.5%;
+    font-size: 40pt;
+    padding-bottom: 10px;
+}
+
+/* NOS DONUTS */
+
+.Nosdonuts{
+    background-color: #141515;
+    padding-bottom: 5%;
+}
+
+h2{
+    color: white;
+    padding: 50px 7.5%;
+    font-size: 40pt;
+    padding-bottom: 10px;
+}
+
+/* NOS DONUTS *//* FIN */
+
+
+
+
+
+/* Produit */
+.prodonut{
+    background-color: #141515;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product{
+    background-color: #ffffff;
+    margin: 10px;
+    padding-right: unset;
+    border-radius: 10px;
+}
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+.material-symbols-outlined:hover{
+    color: #ff0000;
+}
+
+
+/* BOUTON */
+.submit-feedback {
+    display: grid;
+    place-content: center;
+}
+
+.submit-feedback {
+    margin: 5% 650px 0 650px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    background-color: #fadaa8;
+    color: #000000;
+    transition: all 0.3s;
+}
+.submit-feedback:hover {
+    border-radius: 0px;
+    color: #ffa43b;
+    background-color: #ffa43b;
+}
+
+.submit-panier {
+    display: grid;
+    place-content: center;
+}
+
+.submit-panier {
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    background-color: #a8f7fa;
+    color: #000000;
+    transition: all 0.3s;
+}
+.submit-panier:hover {
+    border-radius: 0px;
+    color: #ffa43b;
+    background-color: #affaa8;
+}
+
+.card-add{
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    background-color: #a8f7fa;
+    color: #000000;
+    transition: all 0.3s;
+    border-color: white;
+    width: 100%;
+}
+
+.card-add:hover{
+    border-radius: 0px;
+    color: #000000;
+    background-color: #affaa8;
+}
+
+/* BOUTON */
+
+/* PROPOS */
+.propos{
+    background-color: #141515;
+}
+.flex{
+    display: flex;
+}
+.box1{
+    width: 80%;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+.box1 p{
+    color: white;
+    font-size: x-large;
+}
+/* PROPOS *//* FIN */
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-l {
+    margin-left: 7.5%;
+}
+.foot-l h5{
+    font-size: 40pt;
+    color: white;
+    padding: 10px 0;
+}
+.foot-r {
+    display: flex;  
+    margin-right: 7.5%;
+}
+.foot-r ul{
+    display: flex;
+}
+.foot-r ul li a{
+    color: white;
+}
+.foot-r ul li :nth-child(1) {
+    margin-right: 30px;
+}
+
+/* FOOTER *//* FIN */
+
+
+
+
+
+
+
+
+
+/* mediascreen */
+
+@media screen and (max-width: 1480px) {
+    .fullpage_menu {
+        display: none;
+    }
+    .menuburger{
+        display: block;
+    }
+}  
+
+
+/* mediascreen *//* FIN */
+
+/* MOBILE */
+@media screen and (max-width: 1200px) {
+    .box1 p {
+        font-size: clamp(1rem, 2vw, 2rem);
+    }
+    h1 {
+        font-size: clamp(5rem, 20vw, 20rem);
+        line-height: clamp(5rem, 20vw, 20rem);
+    }
+    header{
+        height: clamp(15rem, 60vw, 45rem);
+    } 
+    h2{
+        font-size: clamp(2rem, 4vw, 4rem);
+    } 
+    .donut1{
+        display: none;
+    } 
+    .donut2{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    .box1{
+        width: 80%;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .Perso {
+        display: none;
+    }
+    .slider{
+        align-items: start;
+        height: clamp(17rem, 23vw, 18rem);
+        grid-template-columns: repeat(5, 34vw);
+    }
+
+
+
+
+    footer {
+        width: 100%;
+    }
+    .foot-l {
+        margin-left: 7.5%;
+    }
+    .foot-l h5{
+        font-size: clamp(2rem, 4vw, 4rem);
+        color: white;
+        padding: 10px 0;
+    }
+    .foot-r {
+        display: flex;  
+        margin-right: 0;
+    }
+    .foot-r ul{
+        display: flex;
+    }
+    .foot-r ul li :nth-child(1) {
+        margin-right: 10px;
+    }
+    .foot-r ul li a{
+       font-size: clamp(1rem, 2vw, 2rem);
+    }    
+} 
+
+
+/* MOBILE *//* FIN */
